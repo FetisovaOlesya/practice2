@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/recipeCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="changeToBackActivity"
+        android:text="@string/recipe_cancel_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recipeDescription"
+        android:layout_width="400dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/recipe_description"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/recipeSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="saveAndChangeToBackActivity"
+        android:text="@string/recipe_save_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recipeCancelButton" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="397dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="259dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/recipeCancelButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/recipeName"
+        android:layout_width="400dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/recipe_name"
+        app:layout_constraintBottom_toTopOf="@+id/recipeDescription"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

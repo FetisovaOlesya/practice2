@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Практическое задание N2</string>
+    <string name="recipe_description">Описание рецепта</string>
+    <string name="recipe_name">Название рецепта</string>
+    <string name="recipe_save_button">Сохранить</string>
+    <string name="recipe_cancel_button">Отменить</string>
+    <string name="recipes">Рецепты</string>
+    <string name="add_recipe">Добавить рецепт</string>
+    <string name="back">Назад</string>
+    <string name="list_recipes">Тут будет список рецептов</string>
+</resources>
